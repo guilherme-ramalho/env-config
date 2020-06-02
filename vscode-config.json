@@ -1,0 +1,31 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "explorer.compactFolders": false,
+  "window.zoomLevel": 0,
+
+  "[javascript]": {
+      "editor.codeActionsOnSave": {
+          "source.fixAll": true
+      }
+  },
+  "[javascriptreact]": {
+      "editor.codeActionsOnSave": {
+          "source.fixAll": true
+      }
+  },
+  "[typescript]": {
+      "editor.codeActionsOnSave": {
+          "source.fixAll": true
+      }
+  },
+  "[typescriptreact]": {
+      "editor.codeActionsOnSave": {
+          "source.fixAll": true
+      }
+  }
+}
