@@ -18,6 +18,15 @@ fi
 echo "DONE"
 
 
+echo "*******INSTALL DRIVERS*******"
+if ! sudo ubuntu-drivers autoinstall
+then
+    echo "Couldn't install drivers"
+    exit 1
+fi
+echo "DONE"
+
+
 echo "*******INSTALLING BATTERY POWER SAVER*******"
 if ! sudo apt install tlp tlp-rdw -y && systemctl enable tlp
 then
@@ -76,6 +85,24 @@ echo "*******INSTALLING VSCODE*******"
 if ! snap install --classic code
 then
     echo "Error installing VSCode"
+    exit 1
+fi
+echo "DONE"
+
+
+echo "*******INSTALLING MAILSPRING*******"
+if ! snap install mailspring
+then
+    echo "Error installing Mailspring"
+    exit 1
+fi
+echo "DONE"
+
+
+echo "*******INSTALLING HTOP*******"
+if ! sudo apt install htop
+then
+    echo "Error installing Htop"
     exit 1
 fi
 echo "DONE"
